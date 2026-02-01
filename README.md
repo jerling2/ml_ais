@@ -2,7 +2,7 @@
 
 ## **Python 3.12.6**
 
-This project requires a compatible version of python to run ydata-profiler. 
+This project requires a compatible version of python to run ydata-profiling. 
 
 
 ## Install and Run with `uv`
