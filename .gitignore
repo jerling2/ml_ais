@@ -1,3 +1,7 @@
+# Volatile HTML reports 
+notebooks/*.html
+
+
 # Hawaii AIS Raw Data
 hawaii_archive/
 hawaii_data/
