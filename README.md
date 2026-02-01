@@ -30,3 +30,16 @@ uv run python src
 # Add Dependencies with uv
 uv add [--dev] <package_name>...
 ```
+
+## Install Juypter Git Filter: _`nbstripout`_
+
+```bash
+# Ensure nbstripout is installed
+uv sync --group dev
+
+# Add Git Filter to .git/
+uv run nbstripout --install
+
+# Verification
+git config --get filter.nbstripout.clean
+```
