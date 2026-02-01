@@ -1,25 +1,32 @@
 # [WIP] Using ML on AIS Data
 
-## In Progress
+## **Python 3.12.6**
 
-1. **Data Profiling**: Assess data quality, integrity, and constraints.
+This project requires a compatible version of python to run ydata-profiler. 
 
 
-## Installation
+## Install and Run with `uv`
 ```bash
-# Init Virtual Environment (venv)
-python -m venv venv
+# Install the uv Project Manager
 
-# Activate Virtual Environment
+    # With Homebrew (MacOS)
+    brew install uv 
 
-    # On Windows
-    .\venv\Scripts\activate
+    # With Powershell (Windows)
+    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
-    # On MacOS 
-    source venv/bin/activate
+    # With Curl (Linux)
+    curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Install Dependencies from `requirements.txt`
-pip install -r requirements.txt
+# Load Dependencies with uv
+uv sync
+
+# Run a Python file with uv
+uv run python <file.py>
+
+# Run __main__.py
+uv run python src
+
+# Add Dependencies with uv
+uv add [--dev] <package_name>...
 ```
-
-
